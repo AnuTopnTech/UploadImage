@@ -1,0 +1,15 @@
+<div>
+  <input type="file" (change)="OnFileSelected($event)" accept="image/*" />
+  <button (click)="OnUpload()" [disabled]="!selectedFile">
+    Upload
+  </button>
+  <!--<div *ngIf="uploadResponse">
+    <h3>Upload Response:</h3>
+    <p>File Path: {{ uploadResponse.filePath }}</p>
+  </div>
+
+  <div *ngIf="errorMessage" style="color: red;">
+    <h3>Error:</h3>
+    <p>{{ errorMessage }}</p>
+  </div>-->
+</div>
